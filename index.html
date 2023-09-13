@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile box</title>
+    <!-- css style  -->
+    <link rel="stylesheet" href="style.css">
+     <!-- box css style  -->
+     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.7.3/dist/full.css" rel="stylesheet" type="text/css" />
+     <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="body">
+    <div class="profile_card">
+
+        <div class="imageSection">
+            <img src="PP2.jpg" alt="" class="image" >
+        </div>
+        <div class="text-data">
+            <span class="name"> Mostofa Taj</span>
+            <span class="job">Web Developer</span>
+        </div> 
+        <div class="media-button">
+            <a href="https://www.facebook.com/mostofa.taj.5/" class="link" target="_blank">
+                <i class='bx bxl-facebook'></i>
+            </a>
+
+            <a href="https://github.com/Mostofa2002" class="link" target="_blank">
+                <i class='bx bxl-github'></i>
+            </a>
+
+            <a href="https://www.instagram.com/mostofa_taj2002/" class="link" target="_blank">
+                <i class='bx bxl-instagram'></i>
+            </a>
+
+            <a href="https://www.linkedin.com/in/mostofa-taj-52472a1b9/" class="link" target="_blank" >
+                <i class='bx bxl-linkedin'></i>
+            </a>
+        </div>
+        <div class="button">
+            <!-- first button  -->
+            <button class="button" onclick="my_modal_1.showModal()">Hobbies</button>
+            <dialog id="my_modal_1" class="modal">
+            <div class="modal-box">
+            <div class="text-center ">
+
+                <p class="py-4">
+                    <li>
+                        <span class="font-bold">Sleeping 😴</span>
+                    </li></p>
+                <p class="py-4"><li><span class="font-bold">Watching Anime + H!😌 </span></li>  </p>
+                <p class="py-4"><li><span class="font-bold">Eating New Food Items 🍖</span></li>  </p>
+                <p class="py-4"><li><span class="font-bold">Coding 🤞</span></li></p>
+                
+                </div>
+                
+            <div class="modal-action">
+                <form method="dialog">
+                <!-- if there is a button in form, it will close the modal -->
+                <button class="btn">Close</button>
+                </form>
+            </div>
+            </div>
+            </dialog>
+
+            <!-- 2nd button  -->
+            <button class="button" onclick="my_modal_2.showModal()">More info</button>
+            <dialog id="my_modal_2" class="modal">
+            <div class="modal-box">
+            
+            <div class="text-center ">
+            <p class="py-4">Nationality : <span class="font-bold">Bangladeshi</span></p>
+            <p class="py-4">Religion : <span class="font-bold">Islam</span></p>
+            <p class="py-4">Address : <span class="font-bold">Kushtia Sadar,Khulna,Bangladesh</span></p>
+            <p class="py-4">Education : <span class="font-bold">Electrical Technology at Kushtia,Polytechnic </span></p>
+            </div>
+            
+            <div class="modal-action">
+                <form method="dialog">
+                <!-- if there is a button in form, it will close the modal -->
+                <button class="btn">Close</button>
+                </form>
+            </div>
+            </div>
+            </dialog>
+            
+
+        </div>
+    </div>
+
+                
+   
+</body>
+</html>
